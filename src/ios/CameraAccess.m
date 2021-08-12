@@ -34,10 +34,6 @@
                 result = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:@"Access denied"];
                 [self invokeCallback:command withResult:result];
             }
-        } failureBlock:^(NSError* error) {
-            NSLog(@"Other error code: %i", error.code);
-            result = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:@"Access denied"];
-            [self invokeCallback:command withResult:result];
         }];
     } else {
         // Unknown Access Status
