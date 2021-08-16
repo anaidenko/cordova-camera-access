@@ -2,7 +2,7 @@
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
 xmlns:android="http://schemas.android.com/apk/res/android"
-           id="com.antOnFire.camera-access"
+           id="cordova-camera-access"
       version="0.1">
 
     <name>Check access to camera on a device</name>
